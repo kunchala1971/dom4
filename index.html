@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<script src="./js/custom.js"></script>
+</head>
+<body>
+	<div class="main-container">
+		<div class="form-group">
+			<label>Bill Amount</label>
+			<input type="number" id="billamount"/>
+		</div>
+		<div class="form-group">
+			<label>Discount %</label>
+			<input type="number" id="discountpercentage" onblur="showDisAmount()"/>
+		</div>
+		<div class="form-group">
+			<label>Discount Amount</label>
+			<input type="number" id="discountamount"/>
+		</div>
+		<div class="form-group">
+			<label>Tip Amount</label>
+			<input type="number" id="tipamount" onblur="showBillAmount()"/>
+		</div>
+		<div class="form-group">
+			<label>Net Bill Amount</label>
+			<input type="number" id="netbillamount"/>
+		</div>
+		<div class="btn-group">
+			<button type="reset" class="btn-clear" onclick="Clear()">Clear</button>
+			<button class="btn-pay">Pay</button>
+		</div>
+	</div>
+</body>
+</html>
